@@ -1,0 +1,116 @@
+.banner{
+    background-color: lightgray;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.leftBanner{
+    justify-content: center;
+    width: 600px;
+    margin-right: 150px;
+}
+.leftBanner h1{
+    font-size: 55px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #1691b5;
+}
+.banner img{
+    margin-right: 100px;
+    width: 350px;
+    height: 250px;
+}
+
+.ourMission{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 200px 0px;
+}
+.ourMissionRight{
+    justify-content: center;
+    width: 700px;
+    margin-right: 150px;
+}
+.ourMissionRight h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #1691b5;
+}
+.ourMission img{
+    margin-right: 100px;
+    width: 400px;
+    height: 300px;
+}
+
+
+
+.ourStory{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: lightgray;
+}
+.leftOurStory{
+    justify-content: center;
+    width: 700px;
+    margin-right: 150px;
+}
+.leftOurStory h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #1691b5;
+}
+.ourStory img{
+    margin-right: 100px;
+    width: 350px;
+    height: 250px;
+}
+
+
+.numbers{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.numbers h1{
+    margin-bottom: 50px;
+    color: #1691b5;
+}
+.cardNumbersWrapper{
+    display:flex;
+    width:  1500px;
+    justify-content: space-around;
+}
+.cardNumbers{
+    background-color: white;
+    height: 350px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cardNumbers img{
+    margin: 20px 0;
+    height: 200px;
+}
+.cardNumbers h2{
+    font-size: 20px;
+}
+.cardNumbers a {
+    margin-bottom: 20px;
+    font-size: 15px ;
+    margin-top: 10px;
+    color: #1691b5;
+}

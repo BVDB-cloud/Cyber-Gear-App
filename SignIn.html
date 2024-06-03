@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberGear Products Page</title>
+    <meta name="description" content="This page is used to store the products of CyberGear.inc">
+    <link rel="stylesheet" href="productsPage.css">
+    <link rel="stylesheet" href="mainStyle.css">
+    <link rel="stylesheet" href="mainPage.css">
+    <link rel="stylesheet" href="loginStyle.css">
+    <script src="https://kit.fontawesome.com/27251a149a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="navbarWrapper">
+            <div class="navBarLeft">
+                <div class="navBarLogo">
+                    <a href="homePage.html"><img src="cybergearMainLogo.png" alt="cybergearMainLogo" id="mainImageLogo"></a>
+                </div>
+                <div class="navBarLinks">
+                    <a href="mainPage.html" >Home</a>
+                    <a href="productsPage.html">Shop</a>
+                    <a href="AboutUs.html">About</a>
+                    <a href="contactUs.html">Contact</a>
+                    <a href="SignIn.html" id="activeTab">Sign In</a>
+
+                </div>
+            </div>
+            <div class="navBarShoppingCart">
+                <i id="navBarShoppingCart" class="fa-solid fa-cart-shopping" style="font-size: 20px; cursor: pointer;"></i>
+                <span id="shoppingCartNumberOfItems" value ="0" >0</span>
+            </div>
+        </div>
+    </nav>
+    <div class="shoppingCartPopOutMenu">
+        <div class="shoppingCartPopoutMenuTitle">
+            <i class="fa-solid fa-cart-shopping" style="color: #111111"></i>           
+            <p>Your Cart</p>
+            <div class="shoppingCartExitButton">
+                <i class="fa-solid fa-xmark" id="cartExit"></i>
+            </div>
+        </div>
+        <div class="couponBannerSuccessful">
+            <p>Coupon code applied successfully.</p>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="couponBannerDenied">
+            <p>Invalid Coupon Code, Try again.</p>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+            <div id="productHolder"></div>
+        <div class="couponAddOption">
+            <input type="text" placeholder="Enter coupon code here" id="discountCodeInput">
+            <button>Apply</button>
+        </div>
+        <div class="shopingCartMoneyWrapper">
+            <div class="totals">
+                <p>Subtotal: <span id="subtotal">$0.00</span></p>
+                <p>Shipping: <span id="shipping">$0.00</span></p>
+                <p>Tax: <span id="tax">$0.00</span></p>
+                <p>Discount: <span id="discount">$0.00</span></p>
+                <p>Total: <span id="total">$0.00</span></p>
+            </div>
+        </div>
+    </div>
+<div class="container">
+    <div class="form-box">
+        <h1 id="title">Sign up</h1>
+        <form>
+            <div class="input-group">
+                <div class="input-field" id="nameField">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text"placeholder="Name">
+                </div>
+
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email"placeholder="Email">
+                </div>
+
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password"placeholder="Password">
+                </div>
+                <p>Lost Password <a href="#">Click Here!</a></p>
+             </div>
+             <div class="btn-field">
+                <button type="button" id="signupBtn">Sign up</button>
+                <button type="button" id="signinBtn" class="disable">Sign in</button>
+             </div>
+             <div class="HomeButton">
+                <a href="mainPage.html"><i class="fa-solid fa-house"></i></a>
+             </div>
+        </form>
+    </div>
+</div>
+<footer>
+    <div class="footerContainer">
+        <div class="footer-section">
+            <h2 class="logo">CyberGear</h2>
+            <address>
+                <strong>Address:</strong> 5100 Maple St, Bellaire, TX 77401<br>
+                <strong>Phone:</strong> (713) 295-3704<br>
+                <strong>Hours:</strong> 08:30 - 16:10, Mon - Fri
+            </address>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>About</h3>
+            <ul>
+                <li><a href="aboutUs.html" >About Us</a></li>
+                <li><a href="#">Delivery Information</a></li>
+                <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                <li><a href="termsandConditions.html">Terms & Conditions</a></li>
+                <li><a href="contactUs.html" >Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>My Account</h3>
+            <ul>
+                <li><a href="SignIn.html">Sign In</a></li>
+                <li><a href="#">View Cart</a></li>
+                <li><a href="#">My Wishlist</a></li>
+                <li><a href="#">Track My Order</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Install App</h3>
+            <div class="app-links">
+                <a href="#"><img src="appstore.png" alt="App Store"></a>
+                <a href="#"><img src="googlepla.jpg" alt="Google Play"></a>
+            </div>
+            <div class="payment-icons">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-discover"></i>
+                <i class="fa-brands fa-cc-amex"></i>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024, CyberGear - Computer Science Final Project</p>
+    </div>
+</footer>
+<script>
+let signupBtn = document.getElementById("signupBtn");
+let signinBtn = document.getElementById("signinBtn");
+let nameField = document.getElementById("nameField");
+let title = document.getElementById("title");
+
+signinBtn.onclick = function(){
+    nameField.style.maxHeight="0";
+    title.innerHTML= "Sign In";
+    signupBtn.classList.add("disable");
+    signinBtn.classList.remove("disable");
+}
+signupBtn.onclick = function(){
+    nameField.style.maxHeight="60px";
+    title.innerHTML="Sign Up";
+    signupBtn.classList.remove("disable");
+    signinBtn.classList.add("disable");
+}
+</script>
+<script src="shoppingCart.js"></script>
+<script src="mainPage.js"></script>
+</body>
+</html>

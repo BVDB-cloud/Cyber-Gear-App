@@ -1,0 +1,87 @@
+section {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+.container {
+    display: flex;
+    background-color: white;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.left-section, .right-section {
+    padding: 20px;
+}
+
+.left-section {
+    flex: 1;
+    border-right: 1px solid #ddd;
+}
+
+.right-section {
+    flex: 1;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+section input, section select, section textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+section textarea {
+    resize: vertical;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input {
+    margin-right: 10px;
+}
+
+#submitButton {
+    padding: 15px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#submitButton:hover {
+    background-color: #0056b3;
+}
